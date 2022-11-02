@@ -1,0 +1,13 @@
+div{
+  height: 2000px;
+  background: palevioletred;
+}
+
+#box{
+  width: 80px;
+  height: 400px;
+  background: green;
+  position: fixed;
+  top: 300px;
+  right: 0px;
+}

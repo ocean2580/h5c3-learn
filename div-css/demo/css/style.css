@@ -1,0 +1,346 @@
+/* 清除浏览器默认边距设置 */
+body, h6, ul, li, a, h6{
+  /* 边距 */
+  margin: 0px;
+  padding: 0px;
+  /* 样式 */
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* header */
+#header{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.header {
+  width: 1200px;
+  height: 40px;
+  border: 1px solid red;
+  /* 居中 */
+  margin: 0px auto;
+}
+
+.header_left {
+  width: 400px;
+  height: 40px;
+  border: 1px solid green;
+  /* 父级中靠左 */
+  float: left;
+}
+
+.header_right {
+  width: 400px;
+  height: 40px;
+  border: 1px solid green;
+  /* 父级中靠右 */
+  float: right;
+}
+
+
+/* logo */
+#logo{
+  width: 1200px;
+  height: 120px;
+  border: 1px solid red;
+  /* 保留距离 */
+  margin: 10px auto;
+}
+
+.logo_left{
+  width: 300px;
+  height: 120px;
+  border: 1px solid pink;
+  float: left;
+}
+
+.logo_right{
+  width: 400px;
+  height: 120px;
+  border: 1px solid pink;
+  float: right;
+}
+
+/* nav */
+#nav{
+  width: 1200px;
+  height: 45px;
+  border: 1px solid palegoldenrod;
+  margin: 0px auto;
+}
+
+.nav_left {
+  width: 300px;
+  height: 45px;
+  border: 1px solid red;
+  float: left;
+}
+.nav_center {
+  width: 700px;
+  height: 45px;
+  border: 1px solid green;
+  float: left;
+}
+.nav_right {
+  width: 150px;
+  height: 45px;
+  border: 1px solid blue;
+  float: right;
+}
+
+/* banner */
+#banner{
+  width: 100%;
+  height: 520px;
+  background: #f4f0f9;
+  /* 为使子类的absolute生效 */
+  position: relative;
+}
+
+#p_content{
+  width: 1200px;
+  height: 520px;
+  border: 1px solid red;
+  position: absolute;
+  top: 0px;
+  /* 计算属性居中 */
+  left: calc(50% - 1200px / 2);
+}
+
+.banner_nav{
+  width: 240px;
+  height: 520px;
+  border: 1px solid black;
+  float: left;
+}
+
+.banner_right{
+  width: 950px;
+  height: 520px;
+  border: 1px solid black;
+  float: right;  
+}
+
+.banner_login{
+  width: 950px;
+  height: 398px;
+  border: 1px solid purple;
+}
+
+.banner_bottom{
+  width: 950px;
+  height: 118px;
+  border: 1px solid purple;
+}
+
+.banner_bottom>div{
+  float: left;
+  width: 221px;
+  height: 110px;
+  border: 1px solid darkblue;
+  margin-left: 13px;
+}
+
+/* sidebar */
+#sidebar{
+  width: 80px;
+  height: 360px;
+  border: 1px solid #ccc;
+  position: fixed;
+  right: 0px;
+  top: calc(50% - 360px / 2);
+  background: #fff;
+  /* 圆角 */
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* content */
+#content{
+  width: 100%;
+  height: 620px;
+  background: #f4f4f4;
+  /* 调整与上方的距离 */
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.content{
+  width: 1200px;
+  height: 620px;
+  background: #fff;
+  margin: 0px auto;
+}
+
+.content_top{
+  width: 1200px;
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content_top>:first-child {
+  width: 200px;
+  height: 80px;
+  border: 1px solid blue;
+  float: left;
+}
+
+.content_top>:nth-child(2) {
+  width: 600px;
+  height: 80px;
+  border: 1px solid blue;
+  /* margin-left: 10px; */
+  float: left;
+}
+
+
+.content_top>:last-child {
+  width: 380px;
+  height: 80px;
+  border: 1px solid blue;
+  float: right;
+}
+
+.content_bottom{
+  width: 1200px;
+  height: 530px;
+  border: 1px solid red;
+}
+
+.content_bottom_left{
+  width: 310px;
+  height: 530px;
+  border: 1px solid aqua;
+  float: left;
+}
+
+.content_bottom_right{
+  width: 880px;
+  height: 530px;
+  border: 1px solid aquamarine;
+  float: right;
+}
+
+.content_bottom_right>div{
+  width: 880px;
+  height: 260px;
+  border: 1px solid red;
+  margin-bottom: 5px;
+}
+
+.content_bottom_right>div>div{
+  width: 210px;
+  height: 260px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-left: 6px;
+}
+
+/* footer */
+#footer{
+  width: 100%;
+  height: 305px;
+  background: #fff;
+}
+
+.footer{
+  width: 1200px;
+  height: 305px;
+  margin: 0px auto;
+  border: 1px solid green;
+}
+
+.footer_top{
+  height: 275px;
+  border: 1px solid aqua;
+}
+
+.footer_top_left {
+  width: 500px;
+  height: 275px;
+  float: left;
+  border: 1px solid slateblue;
+  /* 为img提供定位 */
+  position: relative;
+}
+
+.footer_top_left>img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* 透出  */
+  top: -30px;
+  left: calc(50% - 100px / 2);
+}
+
+.footer_top_left>p {
+  /* border: 1px solid blue; */
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-right: 10px;
+  font-size: small;
+  /* 首行文本缩进 */
+  text-indent: 2em;
+  color: #8492A6;
+}
+
+.footer_top_center {
+  width: 500px;
+  height: 275px;
+  float: left;
+  border: 1px solid blue;  
+}
+
+.footer_top_center>div {
+  float: right;
+  /* margin-top: 20px;   */
+  margin-right: 110px;
+  /* 文本居中 */
+  text-align: center;
+}
+
+.footer_top_center>div>h6 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.footer_top_center>div>ul>li{
+  padding: 10px 5px;
+}
+
+.footer_top_center>div>ul>li>a{
+  color: #8492A6;
+}
+/* 悬停触发 */
+.footer_top_center>div>ul>li:hover>a{
+  color:#306eff;
+  text-decoration: underline;
+}
+
+.footer_top_right {
+  width: 180px;
+  height: 275px;
+  float: right;
+  border: 1px solid black;  
+}
+
+.footer_top_right>div {
+  text-align: center;
+  color: #8492A6;
+} 
+
+.footer_bottom{
+  height: 25px;
+  border: 1px solid yellow;
+  text-align: center;
+  line-height: 28px;
+}
+
+.footer_bottom>a {
+  color: aqua;
+}

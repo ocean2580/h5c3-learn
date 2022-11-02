@@ -1,0 +1,27 @@
+    #box {
+      width: 600px;
+      height: 600px;
+      background-color: deeppink;
+    }
+    #box>div:first-child {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      float: left;
+      /* clear: both; */
+    }
+    #box>div:nth-child(2) {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      /* float: right; */
+      clear: both;
+
+    }
+    #box>div:nth-child(3) {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      float: right;
+      clear: both;
+    }
